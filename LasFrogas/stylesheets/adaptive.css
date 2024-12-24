@@ -1,0 +1,58 @@
+@media (width < 1920px) and (width >= 1385px){
+    #roullet > section{
+        border-width: 8px;
+    }
+}
+
+@media (width  < 1385px) and (width >= 1280px){
+    #roullet > section{
+        border-width: 7px;
+    }
+}
+
+@media (width >= 1024px) and (width < 1280px){
+    #roullet > section{
+        border-width: 6px;
+    }
+    #roullet{
+        border-radius: 20px;
+    }
+}
+
+@media (width >= 728px) and (width < 1024px){
+    #roullet > section{
+        border-width: 5px;
+        border-radius: 15px;
+    }
+    #roullet{
+        border-radius: 15px;
+    }
+}
+
+@media (width >= 422px) and (width < 728px){
+    #roullet > section{
+        border-width: 3px;
+        border-radius: 7px;
+    }
+    #roullet{
+        border-radius: 10px;
+    }
+
+    #circle_wrapper span{
+        width: calc(128 / 422 * 100vw);
+        border-radius: 10px;
+    }
+}
+
+@media (width < 422px){
+    #roullet > section{
+        border-width: 2px;
+        border-radius: 5px;
+    }
+    #roullet{
+        border-radius: 7px;
+    }
+    #circle_wrapper span{
+        border-radius: 7px;
+    }
+}

@@ -1,0 +1,81 @@
+#roullet > section > div{
+    animation: roll 3s linear infinite;
+}
+
+@keyframes roll{
+    0%{
+        top: -20%;
+    }
+    100%{
+        top: 120%;
+    }
+}
+
+#roullet > section > div:nth-child(1){
+    animation-delay: 0s;
+}
+#roullet > section > div:nth-child(2){
+    animation-delay: -1s;
+}
+#roullet > section > div:nth-child(3){
+    animation-delay: -2s;
+}
+
+#circle_animation > div{
+    animation: circle 3s linear infinite;
+    transform-origin: center;
+}
+
+#circle_animation > div:nth-child(1){
+    animation-delay: 0s;
+}
+#circle_animation > div:nth-child(2){
+    animation-delay: -1s;
+}
+#circle_animation > div:nth-child(3){
+    animation-delay: -2s;
+}
+
+@keyframes circle{
+    0%, 100%{
+        left: 30%;
+        top: 10%;
+    }
+    25%{
+        left: 6%;
+        top: 35%;
+    }
+    70%{
+        left: 40%;
+        top: 50%;
+    }
+}
+
+.footer_card{
+    animation: card 3s linear infinite;
+}
+
+.footer_card:nth-of-type(1){
+    animation-delay: 0s;
+}
+.footer_card:nth-of-type(2){
+    animation-delay: -1s;
+}
+.footer_card:nth-of-type(3){
+    animation-delay: -2s;
+}
+
+@keyframes card{
+    0%, 100%{
+        left: calc(1440 / 1920 * 100vw);
+        top: calc(207 / 1920 * 100vw);
+    }
+    33%{
+        left: calc(1065 / 1920 * 100vw);
+        top: calc(613 / 1920 * 100vw);
+    }
+    66%{
+        left: calc(1486 / 1920 * 100vw);
+        top: calc(769 / 1920 * 100vw);
+    }
+}
